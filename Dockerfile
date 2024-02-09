@@ -7,7 +7,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 # install system dependencies
 RUN apt-get update
 
-# install dependencies
+## install dependencies
 RUN pip install --upgrade pip
 COPY ./requirements.txt /app/
 RUN pip install -r requirements.txt
